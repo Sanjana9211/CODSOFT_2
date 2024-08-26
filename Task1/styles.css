@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #49243E; /* Dark Burgundy */
+    line-height: 1.6;
+    background-color: #DBAFA0; /* Warm Beige */
+}
+
+header {
+    background-color: #704264; /* Muted Purple */
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 32px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #BB8493; /* Soft Rose */
+}
+
+.hero {
+    background: url('baker2.png') no-repeat center center/cover;
+    color: #fff;
+    padding: 150px 0;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.hero h2 {
+    font-size: 48px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+    color: #704264; /* Soft Rose */
+}
+
+.hero p {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 30px;
+    color: #BB8493;
+}
+
+.hero .btn {
+    padding: 14px 40px;
+    background-color: #704264; /* Muted Purple */
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #BB8493; /* Soft Rose */
+}
+
+section {
+    padding: 80px 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    font-family: 'Playfair Display', serif;
+    color: #704264; /* Muted Purple */
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    width: 70px;
+    height: 5px;
+    background-color: #BB8493; /* Soft Rose */
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+
+.about p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    color: #49243E; /* Dark Burgundy */
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-item {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 30%;
+}
+
+.product-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    color: #704264; /* Muted Purple */
+}
+
+.product-item p {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #49243E; /* Dark Burgundy */
+}
+
+.product-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.testimonial-item {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 30%;
+}
+
+.testimonial-item p {
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+    color: #49243E; /* Dark Burgundy */
+}
+
+.testimonial-item h4 {
+    margin-top: 15px;
+    font-family: 'Playfair Display', serif;
+    color: #704264; /* Muted Purple */
+}
+
+.testimonial-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contact form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.contact form input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 50px;
+    border: 1px solid #704264; /* Muted Purple */
+    width: 300px;
+}
+
+.contact form button {
+    padding: 10px 20px;
+    background-color: #704264; /* Muted Purple */
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact form button:hover {
+    background-color: #BB8493; /* Soft Rose */
+}
+
+footer {
+    background-color: #49243E; /* Dark Burgundy */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
