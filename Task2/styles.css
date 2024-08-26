@@ -100,8 +100,8 @@ body {
 
 .header-btn {
     display: inline-block;
-    background: #7FA1C3;
-    color: #ffffff;
+    background: #F5EDED;
+    color: #6482AD;
     padding: 15px 30px;
     border-radius: 5px;
     font-family: 'Roboto', sans-serif;
@@ -113,7 +113,8 @@ body {
 }
 
 .header-btn:hover {
-    background: #0056b3;
+    background: #7FA1C3;
+    color: #F5EDED;
 }
 
 /* Section Styles */
@@ -147,7 +148,11 @@ body {
 }
 
 /* Skills Section Styles */
-
+.skills-section h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
 .skills-list {
     font-family: 'Montserrat', sans-serif;
 
